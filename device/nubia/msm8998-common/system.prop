@@ -1,0 +1,201 @@
+#
+# system.prop for nubia msm8998 devices
+#
+
+# Audio
+af.fast_track_multiplier=1
+audio.adm.buffering.ms=3
+audio.deep_buffer.media=true
+audio.dolby.ds2.enabled=true
+audio.dolby.ds2.hardbypass=true
+audio.heap.size.multiplier=7
+audio.noisy.broadcast.delay=600
+audio.offload.buffer.size.kb=32
+audio.offload.disable=false
+audio.offload.gapless.enabled=true
+audio.offload.multiaac.enable=true
+audio.offload.multiple.enabled=false
+audio.offload.passthrough=false
+audio.offload.pcm.16bit.enable=true
+audio.offload.pcm.24bit.enable=true
+audio.offload.pstimeout.secs=3
+audio.offload.track.enable=false
+audio.offload.video=true
+audio.parser.ip.buffer.size=0
+audio.safx.pbe.enabled=true
+audio_hal.period_size=192
+flac.sw.decoder.24bit.support=true
+fm.a2dp.conc.disabled=true
+persist.audio.fluence.speaker=true
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.ras.enabled=false
+qcom.hw.aac.encoder=true
+ro.config.vc_call_vol_steps=11
+ro.qc.sdk.audio.fluencetype=fluence
+ro.qc.sdk.audio.ssr=false
+tunnel.audio.encode=false
+use.qti.sw.alac.decoder=true
+use.qti.sw.ape.decoder=true
+use.voice.path.for.pcm.voip=true
+
+# Battery
+ro.cutoff_voltage_mv=3200
+
+# Bluetooth
+bt.max.hfpclient.connections=1
+persist.bt.a2dp.aac_disable=true
+persist.bt.a2dp_offload_cap=sbc-aptx-aptxhd
+qcom.bluetooth.soc=cherokee
+ro.bluetooth.a4wp=false
+ro.bluetooth.emb_wp_mode=false
+ro.bluetooth.wipower=false
+
+# Camera
+camera.aux.packagelist=com.android.camera,cn.nubia.factory,org.codeaurora.snapcam
+persist.camera.depth.focus.cb=0
+persist.camera.vdbea.switch=1
+persist.ts.rtmakeup=false
+
+# CNE
+persist.cne.feature=1
+
+# Data
+persist.data.mode=concurrent
+persist.data.netmgrd.qos.enable=true
+ro.use_data_netmgrd=true
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Graphics
+debug.gralloc.enable_fb_ubwc=1
+debug.gralloc.gfx_ubwc_disable=0
+debug.sf.hw=1
+dev.pm.dyn_samplingrate=1
+persist.debug.wfd.enable=1
+persist.demo.hdmirotationlock=false
+persist.hwc.enable_vds=1
+persist.sys.force_sw_gles=0
+persist.sys.image.enhance=w
+persist.sys.lcd.anim.scale=1.0
+persist.sys.lcd.colortmp=127
+persist.sys.wfd.virtual=0
+ro.opengles.version=196610
+sdm.debug.disable_partial_split=1
+
+# GPS
+persist.gps.qc_nlp_in_use=1
+persist.loc.nlp_name=com.qualcomm.location
+ro.gps.agps_provider=1
+
+# Media
+media.aac_51_output_enabled=true
+media.stagefright.enable-aac=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
+mm.enable.qcom_parser=13631231
+mm.enable.smoothstreaming=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+vidc.enc.dcvs.extra-buff-count=2
+
+# NFC
+persist.nfc.smartcard.config=SIM1,eSE1
+persist.sys.nfc_reader_twinkle=true
+persist.sys.remove_beam=0
+persist.sys.switch_se=2
+ro.nfc.port=I2C
+
+# Perf
+ro.am.reschedule_service=true
+ro.core_ctl_max_cpu=4
+ro.core_ctl_min_cpu=2
+ro.sys.fw.bg_apps_limit=60
+ro.vendor.at_library=libqti-at.so
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# IMS
+persist.activate_mbn.enabled=false
+persist.data.iwlan.enable=true
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.device.type=omt
+persist.radio.hw_mbn_update=0
+persist.radio.sw_mbn_update=0
+persist.radio.trigger.silence=true
+persist.radio.trigger.supportux=true
+persist.radio.videopause.mode=1
+persist.regional.wipedata.level=all
+
+# RIL
+DEVICE_PROVISIONED=1
+keyguard.no_require_sim=true
+persist.radio.apm_sim_not_pwdn=1
+persist.radio.custom_ecc=1
+persist.radio.data_con_rprt=1
+persist.radio.data_ltd_sys_ind=1
+persist.radio.enhance_ecall=true
+persist.radio.hw_mbn_update=0
+persist.radio.ignore_dom_time=10
+persist.radio.multisim.config=dsds
+persist.radio.rat_on=combine
+persist.radio.sib16_support=1
+persist.radio.start_ota_daemon=0
+persist.radio.sw_mbn_update=0
+persist.radio.VT_CAM_INTERFACE=2
+persist.rild.nitz_long_ons_0=
+persist.rild.nitz_long_ons_1=
+persist.rild.nitz_long_ons_2=
+persist.rild.nitz_long_ons_3=
+persist.rild.nitz_plmn=
+persist.rild.nitz_short_ons_0=
+persist.rild.nitz_short_ons_1=
+persist.rild.nitz_short_ons_2=
+persist.rild.nitz_short_ons_3=
+persist.sys.ap.restart_level=0
+persist.sys.oem_smooth=1
+persist.sys.ssr.restart_level=3
+ril.subscription.types=NV,RUIM
+rild.libpath=/system/vendor/lib64/libril-qc-qmi-1.so
+ro.com.android.dataroaming=true
+ro.telephony.default_cdma_sub=0
+ro.telephony.default_network=22,20
+telephony.lteOnCdmaDevice=1
+
+# RmNet Data
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.dev_name=rmnet_usb0
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.iwlan.enable=true
+persist.data.wda.enable=true
+persist.rmnet.data.enable=true
+
+# SDCardFS
+ro.sys.sdcardfs=true
+
+# Sensors
+ro.qti.sensors.dev_ori=true
+ro.qti.sensors.dpc=true
+ro.qti.sensors.iod=false
+ro.qti.sensors.mot_detect=true
+ro.qti.sensors.multishake=true
+ro.qti.sensors.pmd=true
+ro.qti.sensors.sta_detect=true
+
+# Timeservice
+persist.timed.enable=true
+
+# Wi-Fi
+wifi.interface=wlan0
