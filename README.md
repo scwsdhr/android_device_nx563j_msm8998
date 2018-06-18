@@ -1,0 +1,1 @@
+# android_device_nx563j_msm8998
